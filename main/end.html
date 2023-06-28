@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <title>THE QUIZ</title>
+</head>
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lato';
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: royalblue;
+        }
+        .f_icon{
+            font-size: 300px;
+            color: aliceblue;
+        }
+        .user_name,
+        .user_points,
+        .user_time{
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+    <div class="wrapper">
+        <div>
+            <i class="fas fa-award f_icon"></i>
+            <h3 class="user_name">Well Done! <span class="name"></span></h3>
+            <p class="user_points">YOUR POINTS : <span class="points"></span></p>
+            <p class="user_time">TIME: <span class="time"></span></p>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f90f8bee64.js" crossorigin="anonymous"></script>
+    <script src="js/userinfo.js"></script>
+</body>
+</html>

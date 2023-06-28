@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE QUIZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Lato';
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: royalblue;
+    }
+    .welcome_text{
+        width: 400px;
+    }
+    .welcome_form input,
+    .welcome_form button{
+        display: block;
+        width: 100%;
+
+    }
+    .welcome_form input{
+        margin-bottom: 15px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-size: 30px;
+        text-align: center;
+
+    }
+    .welcome_form button{
+        padding: 20px;
+        font-size: 22px;
+        background-color: #fff;
+        border: none;
+        color: blueviolet;
+        border-radius: 100px;
+        transition: 0.4s all;
+    }
+    .welcome_form button:hover{
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
+    .welcome_form input:focus,
+    .welcome_form button:focus{
+        outline: none;
+    }
+    </style>
+    <div class="wrapper">
+        <div class="welcome_text">
+            <form class="welcome_form" name="welcome_form" onsubmit="submitform(event)">
+                <input type="text" name="name" autocomplete="additional-name">
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div>
+    </div>
+    <script src="/Users/deekshantbansal/Desktop/project quiz/js/quiz.js"></script>
+</body>
+</html>
